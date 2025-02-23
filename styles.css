@@ -1,0 +1,541 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2C3E50;
+  background-color: #F8F9FA;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #2C3E50, #4A607E);
+  color: white;
+  padding: 3rem 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #F1C40F;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #ECF0F1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #F1C40F;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #F1C40F;
+  transition: width 0.3s;
+  margin: auto;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Logo di Header */
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Penjelasan Logo */
+.logo-description {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.mission li {
+  font-size: 1.1rem;
+  color: #7F8C8D;
+  margin-bottom: 15px;
+}
+
+/* Grid Anggota Tim */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kegiatan */
+.activities-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.activity {
+  text-align: center;
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ECF0F1;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.activity i {
+  font-size: 2rem;
+  color: #F1C40F;
+  margin-bottom: 10px;
+}
+
+.activity:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  background-color: white;
+  margin: 30px 10px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: slideIn 1s ease-out;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #2C3E50;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #F1C40F;
+  display: inline-block;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #7F8C8D;
+  margin-bottom: 15px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #34495E, #2C3E50);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2C3E50, #34495E);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid transparent;
+  background: linear-gradient(135deg, #F1C40F, #ECF0F1);
+  background-clip: padding-box;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Parallax Section */
+section.parallax {
+  height: 300px;
+  background-image: url('parallax/parallax.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section.parallax::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+section.parallax h2 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Styling Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(135deg, #2C3E50, #34495E);
+  color: #ECF0F1;
+  font-size: 0.9rem;
+  border-top: 5px solid #F1C40F;
+}
+
+footer a {
+  color: #F1C40F;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+  text-shadow: 0px 4px 6px rgba(255, 204, 0, 0.7);
+  color: #FFD700;
+}
+
+footer p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+}
+
+
+/* Styling Contact Section */
+#contact {
+  padding: 40px;
+  background: linear-gradient(135deg, #ECF0F1, #F8F9FA);
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  color: #34495E;
+  line-height: 1.6;
+}
+
+#contact p i {
+  color: #F1C40F;
+  margin-right: 15px;
+  font-size: 1.8rem;
+}
+#contact a:hover {
+  color: #F1C40F;
+}
+
+#contact a {
+  color: #2C3E50;
+  font-size: 1.3 rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+#contact .social-media {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contact .social-media a {
+  color: #2C3E50;
+  font-size: 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 0%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .social-media a:hover {
+  color: #F1C40F;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #contact {
+    padding: 30px;
+  }
+
+  #contact p {
+    font-size: 1rem;
+  }
+
+  #contact .social-media {
+    gap: 10px;
+  }
+
+  #contact .social-media a {
+    font-size: 1.3rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 20px;
+  }
+
+  #contact p {
+    font-size: 0.9rem;
+  }
+
+  #contact .social-media {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #contact .social-media a {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .gallery img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 600px; /* Ukuran maksimal */
+  padding: 10px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #F1C40F, #ECF0F1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  max-width: 100%; /* Tidak melebihi container */
+  height: auto;
+  border: 5px solid transparent;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+video:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal untuk gambar zoom */
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-modal .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-modal img {
+  width: auto;
+  height: auto;
+  max-width: 90vw; /* Maksimal 90% dari lebar layar */
+  max-height: 90vh; /* Maksimal 90% dari tinggi layar */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.image-modal img:hover {
+  transform: scale(1.05); /* Efek zoom saat gambar di-hover */
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+  .image-modal img {
+      max-width: 100%;
+      max-height: 80%; /* Tambahkan ruang ekstra untuk layar kecil */
+  }
+}
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2C3E50;
+  background-color: #F8F9FA;
+  overflow-x: hidden;
+}
+
+/* Header */
+header h1 {
+  font-size: 3rem;
+  font-weight: 700; /* Lebih tebal untuk penekanan */
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 400; /* Ringan agar kontras */
+  color: #F1C40F;
+}
+
+/* Section Titles */
+section h2 {
+  font-family: 'Roboto', sans-serif; /* Font alternatif */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2C3E50;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+section p, .mission li {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7F8C8D;
+}
+
+/* Navigation Links */
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Buttons */
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Footer */
+footer p, footer a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+}

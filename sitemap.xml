@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Logo Explanation -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/logo-explanation</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- About -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/about</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Vision & Mission -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/vision-mission</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Team -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/team</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Activities -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/activities</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Documentation -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/documentation</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Video -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/video</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Volunteer -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/volunteer</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Contact -->
+  <url>
+    <loc>https://preview-gesidar-site.rf.gd/contact</loc>
+    <lastmod>2025-01-23</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>
